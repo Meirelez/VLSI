@@ -1,0 +1,40 @@
+alias measurement tp_meas_0 {
+
+    run tran (stop=20n)
+    real fall_in_X0 = cross(sig=V(X0), dir='fall, n=1, thresh=Supply/2, start=0)
+    real fall_out_Y0 = cross(sig=V(Y0), dir='fall, n=1, thresh=Supply/2, start=0)
+    export real diff_X0_to_Y0_fall = fall_out_Y0 - fall_in_X0
+    real fall_out_Y1 = cross(sig=V(Y1), dir='fall, n=1, thresh=Supply/2, start=0)
+    export real diff_X0_to_Y1_fall = fall_out_Y1 - fall_in_X0
+    real fall_out_Y2 = cross(sig=V(Y2), dir='fall, n=1, thresh=Supply/2, start=0)
+    export real diff_X0_to_Y2_fall = fall_out_Y2 - fall_in_X0
+    real fall_out_Y3 = cross(sig=V(Y3), dir='fall, n=1, thresh=Supply/2, start=0)
+    export real diff_X0_to_Y3_fall = fall_out_Y3 - fall_in_X0
+    real fall_out_Y4 = cross(sig=V(Y4), dir='fall, n=1, thresh=Supply/2, start=0)
+    export real diff_X0_to_Y4_fall = fall_out_Y4 - fall_in_X0
+    real fall_out_Y5 = cross(sig=V(Y5), dir='fall, n=1, thresh=Supply/2, start=0)
+    export real diff_X0_to_Y5_fall = fall_out_Y5 - fall_in_X0
+    real fall_out_Y6 = cross(sig=V(Y6), dir='fall, n=1, thresh=Supply/2, start=0)
+    export real diff_X0_to_Y6_fall = fall_out_Y6 - fall_in_X0
+    real fall_out_Y7 = cross(sig=V(Y7), dir='fall, n=1, thresh=Supply/2, start=0)
+    export real diff_X0_to_Y7_fall = fall_out_Y7 - fall_in_X0
+
+    real rise_in_X0=cross(sig=V(X0), dir='rise, n=1, thresh=Supply/2, start=1n)
+    real rise_out_Y0=cross(sig=V(Y0), dir='rise, n=1, thresh=Supply/2, start=1n)
+    export real diff_X0_to_Y0_rise = rise_out_Y0 - rise_in_X0
+    real rise_out_Y1 = cross(sig=V(Y1), dir='rise, n=1, thresh=Supply/2, start=1n)
+    export real diff_X0_to_Y1_rise = rise_out_Y1 - rise_in_X0
+    real rise_out_Y2 = cross(sig=V(Y2), dir='rise, n=1, thresh=Supply/2, start=1n)
+    export real diff_X0_to_Y2_rise = rise_out_Y2 - rise_in_X0
+    real rise_out_Y3 = cross(sig=V(Y3), dir='rise, n=1, thresh=Supply/2, start=1n)
+    export real diff_X0_to_Y3_rise = rise_out_Y3 - rise_in_X0
+    real rise_out_Y4 = cross(sig=V(Y4), dir='rise, n=1, thresh=Supply/2, start=1n)
+    export real diff_X0_to_Y4_rise = rise_out_Y4 - rise_in_X0
+    real rise_out_Y5 = cross(sig=V(Y5), dir='rise, n=1, thresh=Supply/2, start=1n)
+    export real diff_X0_to_Y5_rise = rise_out_Y5 - rise_in_X0
+    real rise_out_Y6 = cross(sig=V(Y6), dir='rise, n=1, thresh=Supply/2, start=1n)
+    export real diff_X0_to_Y6_rise = rise_out_Y6 - rise_in_X0
+    real rise_out_Y7 = cross(sig=V(Y7), dir='rise, n=1, thresh=Supply/2, start=1)
+    export real diff_X0_to_Y7_rise = rise_out_Y7 - rise_in_X0
+}
+run tp_meas_0 
