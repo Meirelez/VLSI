@@ -1,4 +1,4 @@
-# 8×8 Benes Multi-Stage Interconnection Network (VLSI)
+# 8×8 Benes Multi-Stage Interconnection Network 
 
 This repository contains the design, simulation and validation tools for an 8×8 Benes multi-stage interconnection network implemented at transistor level.
 
