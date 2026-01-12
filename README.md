@@ -32,6 +32,9 @@ Due to the large number of possible configurations, an automated validation syst
 
 Each simulation validates both functional correctness and propagation delay.
 
+### PDF File
+- `PCVLSI.pdf` – The complete technical report describing the design, layout, simulation methodology, and validation results.
+
 ---
 
 
